@@ -1,0 +1,14 @@
+I"(function() {
+  $(function() {
+    return $('#masonry-container').masonry(function() {
+      return {
+        itemSelector: '.box',
+        columnWidth: 200,
+        isAnimated: !Modernizr.csstransitions,
+        isFitWidth: true
+      };
+    });
+  });
+
+}).call(this);
+:ET
