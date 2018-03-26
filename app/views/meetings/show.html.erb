@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @meeting.name %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @meeting.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @meeting.end_time %>
+</p>
+
+<p>
+  <strong>Attendees:</strong>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Experience</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @users.each do |user| %>
+        <tr scope="row">
+          <td><%= image_tag user.image.url(:thumb) %></td>
+          <td><%= user.username %></td>
+          <td><%= user.experience %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</p>
+
+<% if user_signed_in? %>
+  <%= link_to 'Edit', edit_meeting_path(@meeting) %> |
+  <%= link_to 'Back', meetings_path %>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Meetings</h1>
+
+<%= link_to 'New Sparring', new_meeting_path %>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @meetings.each do |meeting| %>
+      <tr>
+        <td><%= meeting.name %></td>
+        <td><%= meeting.start_time %></td>
+        <td><%= meeting.end_time %></td>
+        <% if user_signed_in? %>
+          <td><%= link_to 'Show', meeting %></td>
+          <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
+          <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

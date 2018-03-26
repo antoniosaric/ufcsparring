@@ -3,6 +3,7 @@ class HomeController < ApplicationController
 
   def index 
     @users = User.all.order("created_at DESC")
+    @meetings = Meeting.all
   end
 
   def destroy
