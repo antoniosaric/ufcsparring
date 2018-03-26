@@ -31,17 +31,15 @@ class Users::RegistrationsController < Devise::RegistrationsController
   private
 
   def user_params
-     params.require(:user).permit(:email, :username, :password)
+     params.require(:user).permit(:email, :username, :password, :image, :experience, :password, :password_confirmation)
   end
 
  def configure_permitted_parameters
   devise_parameter_sanitizer.permit(:sign_up) do |user_params|
-   user_params.permit(:username, :image,
-    :email, :password, :password_confirmation)
+   user_params.permit(:username, :image, :experience, :email, :password, :password_confirmation)
   end
   devise_parameter_sanitizer.permit(:account_update) do |user_params|
-   user_params.permit(:username, image:
-    :email, :password, :password_confirmation)
+   user_params.permit(:username, image:, :experience, :email, :password, :password_confirmation)
   end
  end
 
