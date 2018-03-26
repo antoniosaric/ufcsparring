@@ -21,7 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'simple_form'
 gem 'devise'
-gem "paperclip", "~> 5.0.0"
+gem "paperclip"
 gem 'masonry-rails'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes

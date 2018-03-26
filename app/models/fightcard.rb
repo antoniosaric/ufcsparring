@@ -1,0 +1,2 @@
+class Fightcard < ApplicationRecord
+end

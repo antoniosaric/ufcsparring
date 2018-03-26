@@ -10,28 +10,31 @@
           <%= f.error_notification %>
 
           <div class="form-group">
-            <%= f.label :image %>
-            <%= f.file_field :image, required: false, class: "form-control" %>
+            <%= f.input :image, as: :file, required: false, class: "form-control" %> 
           </div>         
 
           <div class="form-group">
             <%= f.label :username %>
-            <%= f.text_field :username, required: true, autofocus: true, class: "form-control" %>
+            <%= f.input_field :username, required: true, placeholder: 'Enter Username', class: "form-control" %>
           </div>
 
           <div class="form-group">
             <%= f.label :email %>
-            <%= f.email_field :email, required: true, autofocus: true, class: "form-control" %>
+            <%= f.email_field :email, placeholder: 'Enter Email', required: true, autofocus: true, class: "form-control" %>
+          </div>
+
+          <div class="form-group">       
+            <%= f.input :experience, as: :check_boxes, collection: ['beginner', 'novice', 'intermediate', 'expert', 'instructor'], wrapper: :vertical_radio_and_checkboxes, class: "form-control"  %>
           </div>
 
           <div class="form-group">
             <%= f.label :password %>                      
-            <%= f.password_field :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable), class: "form-control" %>
+            <%= f.password_field :password, placeholder: 'Enter Password', required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable), class: "form-control" %>
           </div>
 
           <div class="form-group">
             <%= f.label :password_confirmation %>                      
-            <%= f.password_field :password_confirmation, required: true, class: "form-control"  %>
+            <%= f.password_field :password_confirmation, placeholder: 'Re-Enter Password', required: true, class: "form-control"  %>
           </div>
 
           <div class="form-group">
