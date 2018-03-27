@@ -28,6 +28,14 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def update
   end
 
+  def join(user_id)
+    usermeetings.create(user_id: user_id)
+  end
+
+  def deleteJoin(user_id)
+    usermeetings.find_by(user_id: user_id).destroy
+  end
+
   private
 
   def user_params

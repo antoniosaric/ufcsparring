@@ -24,6 +24,7 @@ gem 'devise'
 gem "paperclip"
 gem 'masonry-rails'
 gem "simple_calendar", "~> 2.0"
+gem "acts_as_follower"
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
