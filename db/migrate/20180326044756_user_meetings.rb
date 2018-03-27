@@ -6,9 +6,5 @@ class UserMeetings < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
-
-    add_index :usermeetings, :user_id
-    add_index :usermeetings, :meeting_id
-    add_index :usermeetings, [:meeting_id, :user_id], unique: true
   end
 end
