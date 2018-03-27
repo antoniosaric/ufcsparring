@@ -16,7 +16,7 @@
 
           <div class="form-group">
             <%= f.label :username %>
-            <%= f.text_field :username, required: true, class: "form-control" %>
+            <%= f.text_field :username, autofocus: true, required: true, class: "form-control" %>
           </div>
 
           <div class="form-group">
@@ -29,7 +29,7 @@
           </div>
 
           <div class="form-group">      
-            <%= f.input :experience, as: :check_boxes, collection: ['beginner', 'novice', 'intermediate', 'expert', 'instructor'], wrapper: :vertical_radio_and_checkboxes, class: "form-control"  %>
+            <%= f.input :experience, as: :check_boxes, collection: ['beginner', 'novice', 'intermediate', 'expert', 'instructor'], wrapper: :vertical_radio_and_checkboxes, autofocus: true, class: "form-control"  %>
           </div>          
 
           <div class="form-group">
