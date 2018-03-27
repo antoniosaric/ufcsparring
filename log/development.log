@@ -7992,3 +7992,369 @@ Processing by Devise::RegistrationsController#edit as HTML
 Completed 200 OK in 211ms (Views: 205.7ms | ActiveRecord: 2.9ms)
 
 
+Started GET "/fight" for 127.0.0.1 at 2018-03-26 17:14:18 -0700
+Processing by FightcardController#index as HTML
+  Rendering fightcard/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  Rendered fightcard/index.html.erb within layouts/application (19.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 289ms (Views: 272.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/ufcdefault.png" for 127.0.0.1 at 2018-03-26 17:14:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/ufcdefault.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [25 times] (11.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.6ms)
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:14:20 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMeeting Load (12.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/simple_calendar-2.2.7/app/views/simple_calendar/_month_calendar.html.erb (10.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 138ms (Views: 107.2ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/images/ufcdefault.png" for 127.0.0.1 at 2018-03-26 17:14:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/ufcdefault.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [25 times] (11.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.8ms)
+Started GET "/meetings" for 127.0.0.1 at 2018-03-26 17:14:26 -0700
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  Rendered meetings/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 123ms (Views: 117.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/meetings/new" for 127.0.0.1 at 2018-03-26 17:14:33 -0700
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered meetings/_form.html.erb (26.8ms)
+  Rendered meetings/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 157ms (Views: 136.8ms | ActiveRecord: 8.7ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (142.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "instagramclone_development"[0m
+  [1m[35m (136.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "instagramclone_test"[0m
+  [1m[35m (24.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (23.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(301593254412045960);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20170609231127)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (28.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "username" character varying DEFAULT '' NOT NULL, "experience" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_experience" ON "users"  ("experience")[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170609231127"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMeetings (20180326040742)
+  [1m[35m (6.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.2ms)[0m  [1m[35mCREATE TABLE "meetings" ("id" serial primary key, "name" character varying, "start_time" timestamp, "end_time" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180326040742"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to UserMeetings (20180326044756)
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "usermeetings" ("id" serial primary key, "user_id" integer, "meeting_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_ddad602a71"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_ff67e4d8db"
+FOREIGN KEY ("meeting_id")
+  REFERENCES "meetings" ("id")
+)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE  INDEX  "index_usermeetings_on_user_id" ON "usermeetings"  ("user_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_usermeetings_on_meeting_id" ON "usermeetings"  ("meeting_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180326044756"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-27 00:54:51.166382"], ["updated_at", "2018-03-27 00:54:51.166382"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(301593254412045960)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:56:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /Users/tonysaric/Desktop/ufcsite/instagramclone/app/controllers/application_controller.rb:3)
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMeeting Load (3.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/simple_calendar-2.2.7/app/views/simple_calendar/_month_calendar.html.erb (36.9ms)
+  [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (78.9ms)
+Completed 200 OK in 880ms (Views: 824.9ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-26 17:56:23 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (326.7ms)
+Completed 200 OK in 494ms (Views: 475.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-26 17:56:51 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jWt2dN8YH3Vjqvk59NDbZfWVnhrzwEym5R7W1Ai9xBBeXkCIEDk9BcAB0oNJSbF8RKU6xywMDHpPFuLzlX5arg==", "user"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fabc2b3d740 @tempfile=#<Tempfile:/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/RackMultipart20180326-75004-1l6ubvi.jpg>, @original_filename="18238922_754577744716600_646459337023739451_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"18238922_754577744716600_646459337023739451_o.jpg\"\r\nContent-Type: image/jpeg\r\n">, "username"=>"antoniosaric", "email"=>"antoniosaric@hotmail.com", "experience"=>["", "intermediate"], "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: experience
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/RackMultipart20180326-75004-1l6ubvi.jpg to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-kyykge.jpg
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-kyykge.jpg to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-o1juk9.jpg
+Command :: file -b --mime '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-o1juk9.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-kyykge.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-kyykge.jpg[0]'
+Command :: convert '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-kyykge.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/57cefaddbc09f4925b07dce81785a4fc20180326-75004-q9um3w'
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/57cefaddbc09f4925b07dce81785a4fc20180326-75004-q9um3w to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/1e55b59297a6d1d00b1cda3776ffdf2120180326-75004-i3evw4
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-kyykge.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-kyykge.jpg[0]'
+Command :: convert '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-kyykge.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/57cefaddbc09f4925b07dce81785a4fc20180326-75004-1jxwetz'
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/57cefaddbc09f4925b07dce81785a4fc20180326-75004-1jxwetz to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/179627bccae9efb02782010942209b4720180326-75004-xh3s0p
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-kyykge.jpg to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-10xjaor.jpg
+Command :: file -b --mime '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/514b0c3737fb33db1dafdc9694bd849420180326-75004-10xjaor.jpg'
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "antoniosaric@hotmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (6.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "encrypted_password", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "antoniosaric@hotmail.com"], ["username", "antoniosaric"], ["encrypted_password", "$2a$11$GVnZJ1N/5Ox.lN3f4TRO3.y6co005Ff1ncBVOLB.yod0C6LeC0y9i"], ["image_file_name", "18238922_754577744716600_646459337023739451_o.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 21603], ["image_updated_at", "2018-03-27 00:56:51.513683"], ["created_at", "2018-03-27 00:56:51.756206"], ["updated_at", "2018-03-27 00:56:51.756206"]]
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-03-27 00:56:51.794568"], ["last_sign_in_at", "2018-03-27 00:56:51.794568"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["updated_at", "2018-03-27 00:56:51.796082"], ["id", 1]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 495ms (ActiveRecord: 26.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 17:56:51 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/simple_calendar-2.2.7/app/views/simple_calendar/_month_calendar.html.erb (7.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 157ms (Views: 152.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-26 17:56:54 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 106ms (Views: 102.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fight" for 127.0.0.1 at 2018-03-26 17:57:00 -0700
+Processing by FightcardController#index as HTML
+  Rendering fightcard/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  Rendered fightcard/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 100ms (Views: 92.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/fight" for 127.0.0.1 at 2018-03-26 18:03:09 -0700
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /Users/tonysaric/Desktop/ufcsite/instagramclone/app/controllers/application_controller.rb:3)
+Processing by FightcardController#index as HTML
+  Rendering fightcard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  Rendered fightcard/index.html.erb within layouts/application (27.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 180ms (Views: 165.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-26 18:03:12 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 96ms (Views: 92.1ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-26 18:03:20 -0700
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJYY9joe+B69PBtaJpJqeIYwF2ovMlwJKROilz0+nmAKbUY+yCwxT7g8FBJEIBa0uMkZnK2Gy2cKY0WZ20wZGw==", "user"=>{"username"=>"antoniosaric", "email"=>"antoniosaric@hotmail.com", "experience"=>"expert", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 309ms (Views: 98.4ms | ActiveRecord: 1.6ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-26 18:03:28 -0700
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WFKyoU8HQ7LP8htvIzMktmJfX+uwJ+6mjIQckRMpo/6KO7D6KX3MyCNnBx010xOK45k9isSIFPsOowSFMIc59A==", "user"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fabc2f3c378 @tempfile=#<Tempfile:/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/RackMultipart20180326-75004-1ler993.jpg>, @original_filename="abdul jabbar.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"abdul jabbar.jpg\"\r\nContent-Type: image/jpeg\r\n">, "username"=>"antoniosaric", "email"=>"antoniosaric@hotmail.com", "experience"=>"expert", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/RackMultipart20180326-75004-1ler993.jpg to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-1pnl20l.jpg
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-1pnl20l.jpg to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/0e145c4abe6daa1839231d23a74f401820180326-75004-1lgkzcf.jpg
+Command :: file -b --mime '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/0e145c4abe6daa1839231d23a74f401820180326-75004-1lgkzcf.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-1pnl20l.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-1pnl20l.jpg[0]'
+Command :: convert '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-1pnl20l.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/2bc65dc054bec9e0d390ea4a2255677220180326-75004-11bis18'
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/2bc65dc054bec9e0d390ea4a2255677220180326-75004-11bis18 to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/34030f6069ee339f034ffa763e2ee3d120180326-75004-18b2o4u
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-1pnl20l.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-1pnl20l.jpg[0]'
+Command :: convert '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-1pnl20l.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/2bc65dc054bec9e0d390ea4a2255677220180326-75004-tr6b5h'
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/2bc65dc054bec9e0d390ea4a2255677220180326-75004-tr6b5h to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/2afe6f960218982b780d112217cc9eaf20180326-75004-pu7gli
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-1pnl20l.jpg to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/0e145c4abe6daa1839231d23a74f401820180326-75004-khj46w.jpg
+Command :: file -b --mime '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/0e145c4abe6daa1839231d23a74f401820180326-75004-khj46w.jpg'
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 489ms (Views: 89.6ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-26 18:03:40 -0700
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5oWu1ek7VODZmO6ozcpHx7paRwsF6gcmG6RtPT8MQlI07KyOj0HbmjUN8trbKnD7O5wlanFF/XuZg3UpHKLYWA==", "user"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fabcbc83a10 @tempfile=#<Tempfile:/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/RackMultipart20180326-75004-1jls4xh.jpg>, @original_filename="abdul jabbar.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"abdul jabbar.jpg\"\r\nContent-Type: image/jpeg\r\n">, "username"=>"antoniosaric", "email"=>"antoniosaric@hotmail.com", "experience"=>"expert", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/RackMultipart20180326-75004-1jls4xh.jpg to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-9en7in.jpg
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-9en7in.jpg to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/0e145c4abe6daa1839231d23a74f401820180326-75004-1ayly5j.jpg
+Command :: file -b --mime '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/0e145c4abe6daa1839231d23a74f401820180326-75004-1ayly5j.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-9en7in.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-9en7in.jpg[0]'
+Command :: convert '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-9en7in.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/e65576683b46ac20807c2697fb88e72120180326-75004-1n0drh0'
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/e65576683b46ac20807c2697fb88e72120180326-75004-1n0drh0 to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/926c7a4138d4a00f412083052859062620180326-75004-1ykau7s
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-9en7in.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-9en7in.jpg[0]'
+Command :: convert '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-9en7in.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/e65576683b46ac20807c2697fb88e72120180326-75004-kwerph'
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/e65576683b46ac20807c2697fb88e72120180326-75004-kwerph to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/82c04ad81f406f299d83382428e9121e20180326-75004-1rjqilu
+[paperclip] Trying to link /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/151674abbcfcfa014974ecdbb19e9cfd20180326-75004-9en7in.jpg to /var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/0e145c4abe6daa1839231d23a74f401820180326-75004-1qlan9c.jpg
+Command :: file -b --mime '/var/folders/g7/sf_f0sd51xn6yth4ypxc82_00000gn/T/0e145c4abe6daa1839231d23a74f401820180326-75004-1qlan9c.jpg'
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = $1, "image_file_name" = $2, "image_file_size" = $3, "image_updated_at" = $4, "experience" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["encrypted_password", "$2a$11$7QEqp9LPclwxWD4xX2TFD.iCm5e.cQZeGIhb.zQ1G2xz63MZZs8/G"], ["image_file_name", "abdul_jabbar.jpg"], ["image_file_size", 64061], ["image_updated_at", "2018-03-27 01:03:40.752413"], ["experience", "expert"], ["updated_at", "2018-03-27 01:03:40.929075"], ["id", 1]]
+[paperclip] deleting /Users/tonysaric/Desktop/ufcsite/instagramclone/public/system/users/images/000/000/001/original/18238922_754577744716600_646459337023739451_o.jpg
+[paperclip] deleting /Users/tonysaric/Desktop/ufcsite/instagramclone/public/system/users/images/000/000/001/medium/18238922_754577744716600_646459337023739451_o.jpg
+[paperclip] deleting /Users/tonysaric/Desktop/ufcsite/instagramclone/public/system/users/images/000/000/001/thumb/18238922_754577744716600_646459337023739451_o.jpg
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 561ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 18:03:40 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/simple_calendar-2.2.7/app/views/simple_calendar/_month_calendar.html.erb (7.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 139ms (Views: 126.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/fight" for 127.0.0.1 at 2018-03-26 18:03:43 -0700
+Processing by FightcardController#index as HTML
+  Rendering fightcard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  Rendered fightcard/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 144ms (Views: 137.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-26 18:04:17 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 193ms (Views: 189.2ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-26 18:05:15 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vb3XTe0FFQ0ART6sI3cybmFcQYeoSCKko0Dn+muIR55v1NUWi3+ad+zQIt41lwVS4Joj5tzn2PkhZ//uSCbdlA=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 18:05:16 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/simple_calendar-2.2.7/app/views/simple_calendar/_month_calendar.html.erb (7.9ms)
+  Rendered home/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 159ms (Views: 154.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-26 18:05:17 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 125ms (Views: 122.7ms | ActiveRecord: 0.0ms)
+
+
